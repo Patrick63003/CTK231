@@ -1,0 +1,19 @@
+header{ 
+   background-color:skyblue;
+}
+h1 {
+    color:white
+}
+#div2 {
+    background-color: yellow
+}
+a:link {
+  color: #008000;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
