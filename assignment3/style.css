@@ -1,0 +1,34 @@
+header{ 
+   background-color:skyblue;
+}
+h1 {
+    color:red;
+    background-color:green;
+}
+h2 {
+    color:purple;
+}
+h3 {
+    color:pink;
+}
+#divstyle {
+    color:brown;
+    background-color: yellow;
+}
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+    color:green;
+    background-color:transparent;
+}
+.spanstyle {
+    background-color:lime;
+}
