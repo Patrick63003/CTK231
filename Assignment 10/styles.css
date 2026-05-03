@@ -1,0 +1,141 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #999999;
+  font-family: 'Courier Prime', monospace;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #ffffff;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 0;
+  align-items: start;
+}
+
+
+#sidebar {
+  grid-column: 1 / span 2;
+  background-color: slateblue;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+  min-height: 800px;
+}
+
+.nav-btn {
+  display: block;
+  background-color: teal;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.3rem;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.nav-btn:hover {
+  background-color: #2db899;
+  transform: translateX(3px);
+}
+
+#main-content {
+  grid-column: 3 / span 10;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 12px 0 24px;
+}
+
+#welcome-banner {
+  display: flex;
+  justify-content: center;
+}
+
+#welcome-banner span {
+  background-color: #7b6fd4;
+  color: #ffffff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.55rem;
+  padding: 14px 40px;
+  border-radius: 50px; 
+  letter-spacing: 0.5px;
+}
+
+
+#profile-card {
+  background-color: #a8d8f0;
+  padding: 28px 32px 32px;
+  text-align: center;
+}
+
+#profile-card h1 {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 14px;
+  color: #111111;
+}
+
+#profile-card p {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1.1rem;
+  color: #333333;
+  letter-spacing: 0.5px;
+}
+
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-thumbnail {
+  background-color: #d4d4d4; 
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-label {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1.1rem;
+  color: #444444;
+}
+
+.project-title {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #111111;
+  text-align: center;
+}
+
+#project-description {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1rem;
+  color: #222222;
+  line-height: 1.65;
+}
